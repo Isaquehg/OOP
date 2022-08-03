@@ -1,2 +1,2 @@
 # OOP
-Repo for OOP classes
+Repo for OOP classes using Java
