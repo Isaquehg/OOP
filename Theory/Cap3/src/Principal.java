@@ -32,5 +32,9 @@ public class Principal {
 
         //infos trab2
         trab2.mostraInfo();
+
+        //trab2 apontando p/ trab1: Exclui o objeto original do trab2 e trab2 vai apontar p objeto do trab1
+        trab2 = trab1;
+        trab2.mostraInfo();
     }
 }
