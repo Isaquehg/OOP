@@ -31,14 +31,14 @@ public class Banda {
             System.out.println("Não possui empresário");
         }
         System.out.println("");
-        System.out.println("Musicas:");
+        System.out.println("Músicas:");
         for (int i = 0; i < this.musicas.length; i++) {
             if(this.musicas[i] != null){
                 System.out.println(this.musicas[i].nome);
             }
         }
         System.out.println("");
-        System.out.println("Musicos:");
+        System.out.println("Músicos:");
         for (int i = 0; i < this.musicos.length; i++) {
             if(this.musicos[i] != null){
                 System.out.println(this.musicos[i].nome);

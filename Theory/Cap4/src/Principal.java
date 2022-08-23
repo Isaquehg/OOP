@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Principal {
     public static void main(String[] args) {
         /*
@@ -55,12 +58,12 @@ public class Principal {
 
 
         System.out.println("----------------------------------------------");
-        System.out.println("MULTIPLICIDADE");
+        System.out.println("ROCK BAND");
 
         Musico[] musicos = new Musico[100];
         musicos[0] = new Musico("Juninho Afram", "Guitarrista");
         musicos[1] = new Musico("Mauro", "Vocalista");
-        musicos[2] = new Musico("Larry", "Baterista");
+        musicos[2] = new Musico("PG", "Vocalista");
 
         Musica[] musicas = new Musica[100];
         musicas[0] = new Musica("O Tempo", 5.2);
@@ -72,5 +75,44 @@ public class Principal {
 
         Banda banda = new Banda("Oficina G3", "Rock", musicos, musicas);
         banda.mostraInfo();
+
+        System.out.println("----------------------------------------------");
+        System.out.println("CAMPO MINADO");
+
+        int linha;
+        int coluna;
+        int linha_ale;
+        int coluna_ale;
+        int pontos = 0;
+        int[][] malha = new int[3][3];
+
+        //Instanciando objetos a utilizar
+        Random num_ale = new Random();
+        Scanner scanner1 = new Scanner(System.in);
+
+        //gerando posição aleatória p/ bomba
+        linha_ale = num_ale.nextInt(2);
+        coluna_ale = num_ale.nextInt(2);
+
+        malha[linha_ale][coluna_ale] = 1;
+
+        System.out.println("CAMPO MINADO");
+        while(pontos < 8){
+            System.out.println("Entre com a linha: ");
+            linha = scanner1.nextInt();
+            System.out.println("Entre com a coluna: ");
+            coluna = scanner1.nextInt();
+            if(malha[linha][coluna] == 1){
+                System.out.println("BOOOOOOOOOMMM!");
+                System.out.println("End game!");
+                break;
+            }
+            else{
+                pontos ++;
+                System.out.println("Great job! ;)");
+                System.out.println("Você está com " + pontos + " pontos.");
+            }
+        }
+        System.out.println("CONGRATS! YOU WIN!!!!");
     }
 }
