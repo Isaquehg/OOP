@@ -1,5 +1,16 @@
 public class Conta {
+    //ENCAPSULAMENTO DE DADOS(private)
     private int numero;
+    private float saldo;
+    private String proprietario;
+    public static int total_contas = 0;
+
+    public Conta(int numero, float saldo, String proprietario) {
+        this.numero = numero;
+        this.saldo = saldo;
+        this.proprietario = proprietario;
+        total_contas ++;
+    }
 
     public int getNumero() {
         return numero;
@@ -22,15 +33,6 @@ public class Conta {
     }
 
     public void setProprietario(String proprietario) {
-        this.proprietario = proprietario;
-    }
-
-    private float saldo;//ENCAPSULAMENTO DE DADOS
-    private String proprietario;
-
-    Conta(int numero, float saldo, String proprietario){
-        this.numero = numero;
-        this.saldo = saldo;
         this.proprietario = proprietario;
     }
 
