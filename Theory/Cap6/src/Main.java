@@ -6,7 +6,7 @@ public class Main {
         -: Private
         #: Protected(apenas classes filhas podem acessar)
 
-        @override -> sobrescreve um método da classe mãe
+        @Override -> sobrescreve um método da classe mãe
         super(método) -> reaproveita método da classe mãe
 
         Herança -> extends

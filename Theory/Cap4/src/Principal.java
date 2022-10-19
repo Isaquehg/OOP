@@ -14,7 +14,7 @@ public class Principal {
         int[] array1 = new int[10];
 
         // Inserindo elementos
-        //Obs.: Caso nãp tenha elementos inseridos, será preenchido por 0s as posições vazias
+        //Obs.: Caso não tenha elementos inseridos, será preenchido por 0s as posições vazias
         array1[0] = 25;
         for (int i = 0; i < array1.length; i ++){
             array1[i] = i + 250;
@@ -56,7 +56,6 @@ public class Principal {
             }
         }
 
-
         System.out.println("----------------------------------------------");
         System.out.println("ROCK BAND");
 
@@ -69,7 +68,6 @@ public class Principal {
         musicas[0] = new Musica("O Tempo", 5.2);
         musicas[1] = new Musica("Descanso", 6.1);
         musicas[3] = new Musica("Confiar", 4.4);
-
 
         Empresario empresario = new Empresario("Anonimo", "12345678910");
 
@@ -96,7 +94,6 @@ public class Principal {
 
         malha[linha_ale][coluna_ale] = 1;
 
-        System.out.println("CAMPO MINADO");
         while(pontos < 8){
             System.out.println("Entre com a linha: ");
             linha = scanner1.nextInt();
