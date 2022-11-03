@@ -9,7 +9,6 @@ public class Bruxo extends Personagem {
         super(nome, energia, vida);
     }
 
-
     public void adicionarMagia(Magia magia){
         magias.add(magia);
     }
@@ -35,6 +34,4 @@ public class Bruxo extends Personagem {
     public int retornaIndexMagia(Magia magia){
         return magias.indexOf(magia);
     }
-
-
 }
