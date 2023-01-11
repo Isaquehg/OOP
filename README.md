@@ -1,2 +1,3 @@
-# OOP
-Repo for OOP classes using Java
+# Object Oriented Programming using Java
+
+Repo from OOP classes with Java
